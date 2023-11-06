@@ -1,6 +1,6 @@
 # Fi-it
 
-Requisitos Fucionais
+Requisitos Fucionais:
 
 | Código | Descrição | Prioridade |
 | ------ | --------- | ---------- |
@@ -17,7 +17,7 @@ Requisitos Fucionais
 | RF12   | A plataforma deve permitir que os usuários classifiquem e escrevam avaliações sobre os médicos que visitaram. | Deveria |
 
 
-Requisitos Nao Fucionais
+Requisitos Nao Fucionais:
 
 | Código | Descrição | Prioridade |
 | ------ | --------- | ---------- |
@@ -31,16 +31,65 @@ Requisitos Nao Fucionais
 
 História de Usuário 
 
-| Número | História de Usuário | Prioridade |
-| ------ | ------------------- | ---------- |
-| 1      | Marcação de Consulta Antecipada | Obrigatório |
-| 2      | Visualização de Disponibilidade de Horários | Obrigatório |
-| 3      | Lista de Espera | Obrigatório |
-| 4      | Pesquisa por Especialidade Médica | Obrigatório |
-| 5      | Pesquisa por Médico Específico | Obrigatório |
-| 6      | Visualização de Histórico de Consultas | Obrigatório |
-| 7      | Pagamento Online | Obrigatório |
-| 8      | Cancelamento e Reagendamento de Consultas | Deveria |
-| 9      | Lembretes Automáticos | Deveria |
-| 10     | Avaliações de Médicos | Deveria |
+# Histórias de Usuário
+
+## História de Usuário 1
+
+Como um usuário, desejo poder marcar uma consulta com antecedência em diversas especialidades médicas, para que eu possa planejar minha agenda com antecedência.
+
+**Prioridade:** Obrigatório
+
+## História de Usuário 2
+
+Como um usuário, quero poder visualizar a disponibilidade de horários dos médicos em minha região, para que eu possa escolher um horário conveniente para minha consulta.
+
+**Prioridade:** Obrigatório
+
+## História de Usuário 3
+
+Como um usuário, desejo poder adicionar meu nome a uma lista de espera se não houver horários disponíveis para a especialidade médica ou o médico que escolhi, para que eu tenha a chance de marcar uma consulta se alguém cancelar.
+
+**Prioridade:** Obrigatório
+
+## História de Usuário 4
+
+Como um usuário, quero pesquisar por uma especialidade médica específica e encontrar o médico mais adequado para meu problema de saúde.
+
+**Prioridade:** Obrigatório
+
+## História de Usuário 5
+
+Como um usuário, desejo pesquisar por um médico específico dentro de uma especialidade médica e ver suas informações de contato e avaliações de outros pacientes, para que eu possa tomar uma decisão informada sobre qual médico escolher.
+
+**Prioridade:** Obrigatório
+
+## História de Usuário 6
+
+Como um usuário, quero visualizar meu histórico de consultas com um determinado médico ou especialidade médica, para que eu possa acompanhar meu histórico médico.
+
+**Prioridade:** Obrigatório
+
+## História de Usuário 7
+
+Como um usuário, desejo poder pagar pelas minhas consultas online, para que eu possa efetuar o pagamento de forma conveniente.
+
+**Prioridade:** Obrigatório
+
+## História de Usuário 8
+
+Como um usuário, quero poder cancelar ou reagendar minhas consultas com antecedência, caso surja algum imprevisto, para que eu possa gerenciar minha agenda com flexibilidade.
+
+**Prioridade:** Deveria
+
+## História de Usuário 9
+
+Como um usuário, desejo receber lembretes automáticos sobre minhas consultas agendadas, para que eu não esqueça dos compromissos médicos.
+
+**Prioridade:** Deveria
+
+## História de Usuário 10
+
+Como um usuário, quero ter a capacidade de classificar e escrever avaliações sobre os médicos que visitei, para compartilhar minha experiência e ajudar outros pacientes a escolherem um médico confiável.
+
+**Prioridade:** Deveria
 
