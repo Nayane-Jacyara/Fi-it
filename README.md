@@ -71,7 +71,7 @@ Como um usuário, quero ter a capacidade de classificar e escrever avaliações 
 | RF06   | A plataforma deve permitir que os usuários pesquisem por uma especialidade médica específica e encontrem o médico mais adequado para seu problema de saúde. | Obrigatório |
 | RF07   | A plataforma deve permitir que os usuários pesquisem por um médico específico dentro de uma especialidade médica e vejam suas informações de contato e avaliações de outros pacientes. | Obrigatório |
 | RF08   | A plataforma deve permitir que os usuários visualizem seu histórico de consultas com um determinado médico ou especialidade médica. | Obrigatório |
-| RF09   | A plataforma deve permitir que os usuários paguem pelas suas consultas online. | Obrigatório |
+| RF09   | A plataforma deve permitir que os usuários paguem pelas suas consultas online. | Deveria |
 | RF10   | A plataforma deve permitir que os usuários cancelem ou reagendem suas consultas com antecedência. | Deveria |
 | RF11   | A plataforma deve enviar lembretes automáticos aos usuários sobre suas consultas agendadas. | Deveria |
 | RF12   | A plataforma deve permitir que os usuários classifiquem e escrevam avaliações sobre os médicos que visitaram. | Deveria |
