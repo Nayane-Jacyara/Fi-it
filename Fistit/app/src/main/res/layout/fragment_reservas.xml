@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".service.Reservas">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgPesquisar2"
+            android:layout_width="86dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/img_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/agenda2"
+            app:layout_constraintStart_toEndOf="@+id/home2" />
+
+        <ImageView
+            android:id="@+id/home2"
+            android:layout_width="82dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/img_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgPesquisar2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/agenda2"
+            android:layout_width="89dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/img_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/perfil2"
+            app:layout_constraintStart_toEndOf="@+id/imgPesquisar2" />
+
+        <ImageView
+            android:id="@+id/perfil2"
+            android:layout_width="80dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/img_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/agenda2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="413dp"
+            android:layout_height="45dp"
+            android:text="Minhas reservas"
+            android:textAlignment="center"
+            android:textColor="#0BA99A"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textMedico"
+            android:layout_width="275dp"
+            android:layout_height="31dp"
+            android:text="Consulta com Dr. Joao Paulo "
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="80dp" />
+
+        <TextView
+            android:id="@+id/textClinica"
+            android:layout_width="272dp"
+            android:layout_height="29dp"
+            android:text="Clinica Sao Jose"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="57dp"
+            android:layout_height="42dp"
+            android:src="@drawable/img_5"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="125dp" />
+
+        <TextView
+            android:id="@+id/textData"
+            android:layout_width="95dp"
+            android:layout_height="28dp"
+            android:text="27/11/2023"
+            android:textSize="18dp"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <TextView
+            android:id="@+id/textValor"
+            android:layout_width="95dp"
+            android:layout_height="28dp"
+            android:text="135,00"
+            android:textSize="18dp"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="190dp" />
+
+        <TextView
+            android:id="@+id/textTelefone"
+            android:layout_width="186dp"
+            android:layout_height="43dp"
+            android:text="(11) 0000-0000"
+            android:textSize="18dp"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="306dp" />
+
+        <TextView
+            android:id="@+id/textEndereço"
+            android:layout_width="281dp"
+            android:layout_height="43dp"
+            android:text="Av. Nove de Julho, 854 Centro - São Paulo"
+            android:textSize="18dp"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="255dp" />
+
+        <TextView
+            android:id="@+id/textHora"
+            android:layout_width="95dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="51dp"
+            android:text=" 9:30"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="52dp"
+            android:layout_height="38dp"
+            android:background="@color/white"
+            android:src="@android:drawable/ic_lock_idle_alarm"
+            tools:layout_editor_absoluteX="213dp"
+            tools:layout_editor_absoluteY="129dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="51dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="44dp"
+            android:src="@drawable/img_7"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="177dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="45dp"
+            android:layout_height="47dp"
+            android:src="@drawable/img_8"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <Button
+            android:id="@+id/buttonReagendar"
+            android:layout_width="138dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="248dp"
+            android:text="Reagendar"
+            app:layout_constraintBottom_toTopOf="@+id/imgPesquisar2"
+            app:layout_constraintEnd_toStartOf="@+id/buttonExcluir"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonExcluir"
+            android:layout_width="138dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="248dp"
+            android:text="Excluir Reserva"
+            app:layout_constraintBottom_toTopOf="@+id/agenda2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonReagendar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

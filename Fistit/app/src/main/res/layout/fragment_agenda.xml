@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".service.Agenda">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/textValorDaConsulta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="406dp"
+            android:layout_height="40dp"
+            android:text="Fazer uma reserva"
+            android:textAlignment="center"
+            android:textColor="#0BA99A"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="411dp"
+            android:layout_height="356dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="402dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="1dp"
+            android:text="Horarios:"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.166"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+        <Button
+            android:id="@+id/buttonHorario3"
+            android:layout_width="94dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="10:30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonHorario2"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textNomeMedico"
+            android:layout_width="410dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="20dp"
+            android:text="Consulta com Dra. Laura Rodrigues"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/textVagas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonHorario3" />
+
+        <Button
+            android:id="@+id/buttonHorario"
+            android:layout_width="95dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="8:30"
+            app:iconTint="#0BA99A"
+            app:layout_constraintEnd_toStartOf="@+id/buttonHorario2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <Button
+            android:id="@+id/buttonHorario2"
+            android:layout_width="91dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="9:30"
+            app:layout_constraintEnd_toStartOf="@+id/buttonHorario3"
+            app:layout_constraintStart_toEndOf="@+id/buttonHorario"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textVagas"
+            android:layout_width="409dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="20dp"
+            android:text="Vagas: 15"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/textValor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textNomeMedico" />
+
+        <TextView
+            android:id="@+id/textValor"
+            android:layout_width="409dp"
+            android:layout_height="35dp"
+            android:text="R$: 150,00"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textVagas" />
+
+        <Button
+            android:id="@+id/buttonConfirmar"
+            android:layout_width="238dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="85dp"
+            android:layout_marginBottom="44dp"
+            android:text="Confirmar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textValor" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
