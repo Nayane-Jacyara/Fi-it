@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/telaInicial">
+
+    <fragment
+        android:id="@+id/home3"
+        android:name="com.example.fist_it.service.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home3_to_estabelecimento"
+            app:destination="@id/estabelecimento" />
+        <action
+            android:id="@+id/action_home3_to_reservas"
+            app:destination="@id/reservas" />
+        <action
+            android:id="@+id/action_home3_to_perfil3"
+            app:destination="@id/perfil3" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastro"
+        android:name="com.example.fist_it.service.Cadastro"
+        android:label="fragment_cadastro"
+        tools:layout="@layout/fragment_cadastro" >
+        <action
+            android:id="@+id/action_cadastro_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_cadastro_to_home3"
+            app:destination="@id/home3" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.fist_it.service.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_home3"
+            app:destination="@id/home3" />
+        <action
+            android:id="@+id/action_login_to_cadastro"
+            app:destination="@id/cadastro" />
+        <action
+            android:id="@+id/action_login_to_homeClinica"
+            app:destination="@id/homeClinica" />
+        <action
+            android:id="@+id/action_login_to_home32"
+            app:destination="@id/home3" />
+    </fragment>
+    <fragment
+        android:id="@+id/estabelecimento"
+        android:name="com.example.fist_it.service.Estabelecimento"
+        android:label="fragment_estabelecimento"
+        tools:layout="@layout/fragment_estabelecimento" >
+        <action
+            android:id="@+id/action_estabelecimento_to_agenda3"
+            app:destination="@id/agenda3" />
+    </fragment>
+    <fragment
+        android:id="@+id/agenda3"
+        android:name="com.example.fist_it.service.Agenda"
+        android:label="fragment_agenda"
+        tools:layout="@layout/fragment_agenda" />
+    <fragment
+        android:id="@+id/perfil3"
+        android:name="com.example.fist_it.service.Perfil"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/reservas"
+        android:name="com.example.fist_it.service.Reservas"
+        android:label="fragment_reservas"
+        tools:layout="@layout/fragment_reservas" >
+        <action
+            android:id="@+id/action_reservas_to_agenda3"
+            app:destination="@id/agenda3" />
+        <action
+            android:id="@+id/action_reservas_to_perfil3"
+            app:destination="@id/perfil3" />
+        <action
+            android:id="@+id/action_reservas_to_home3"
+            app:destination="@id/home3" />
+    </fragment>
+    <fragment
+        android:id="@+id/telaInicial"
+        android:name="com.example.fist_it.service.TelaInicial"
+        android:label="fragment_tela_inicial"
+        tools:layout="@layout/fragment_tela_inicial" >
+        <action
+            android:id="@+id/action_telaInicial_to_cadastro"
+            app:destination="@id/cadastro" />
+        <action
+            android:id="@+id/action_telaInicial_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroClinica"
+        android:name="com.example.fist_it.service.CadastroClinica"
+        android:label="fragment_cadastro_clinica"
+        tools:layout="@layout/fragment_cadastro_clinica" >
+        <action
+            android:id="@+id/action_cadastroClinica_to_cadastroMedico"
+            app:destination="@id/cadastroClinica" />
+        <action
+            android:id="@+id/action_cadastroClinica_to_homeClinica"
+            app:destination="@id/homeClinica" />
+        <action
+            android:id="@+id/action_cadastroClinica_to_agendaDaClinica"
+            app:destination="@id/agendaDaClinica" />
+        <action
+            android:id="@+id/action_cadastroClinica_to_perfilClinica"
+            app:destination="@id/perfilClinica" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroClinica"
+        android:name="com.example.fist_it.service.CadastroMedico"
+        android:label="fragment_cadastro_medico"
+        tools:layout="@layout/fragment_cadastro_medico" >
+        <action
+            android:id="@+id/action_cadastroMedico_to_homeClinica"
+            app:destination="@id/homeClinica" />
+        <action
+            android:id="@+id/action_cadastroMedico_to_agendaDaClinica"
+            app:destination="@id/agendaDaClinica" />
+        <action
+            android:id="@+id/action_cadastroMedico_to_perfilClinica"
+            app:destination="@id/perfilClinica" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeClinica"
+        android:name="com.example.fist_it.service.HomeClinica"
+        android:label="fragment_home_clinica"
+        tools:layout="@layout/fragment_home_clinica" >
+        <action
+            android:id="@+id/action_homeClinica_to_cadastroClinica"
+            app:destination="@id/cadastroClinica" />
+        <action
+            android:id="@+id/action_homeClinica_to_cadastroMedico"
+            app:destination="@id/cadastroClinica" />
+        <action
+            android:id="@+id/action_homeClinica_to_agendaDaClinica"
+            app:destination="@id/agendaDaClinica" />
+        <action
+            android:id="@+id/action_homeClinica_to_perfilClinica"
+            app:destination="@id/perfilClinica" />
+        <action
+            android:id="@+id/action_homeClinica_to_listaDosMedicos"
+            app:destination="@id/listaDosMedicos" />
+    </fragment>
+    <fragment
+        android:id="@+id/agendaDaClinica"
+        android:name="com.example.fist_it.service.AgendaDaClinica"
+        android:label="fragment_agenda_da_clinica"
+        tools:layout="@layout/fragment_agenda_da_clinica" >
+        <action
+            android:id="@+id/action_agendaDaClinica_to_homeClinica"
+            app:destination="@id/homeClinica" />
+        <action
+            android:id="@+id/action_agendaDaClinica_to_perfilClinica"
+            app:destination="@id/perfilClinica" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilClinica"
+        android:name="com.example.fist_it.service.PerfilClinica"
+        android:label="fragment_perfil_clinica"
+        tools:layout="@layout/fragment_perfil_clinica" >
+        <action
+            android:id="@+id/action_perfilClinica_to_agendaDaClinica"
+            app:destination="@id/agendaDaClinica" />
+        <action
+            android:id="@+id/action_perfilClinica_to_homeClinica"
+            app:destination="@id/homeClinica" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaDosMedicos"
+        android:name="com.example.fist_it.service.ListaDosMedicos"
+        android:label="fragment_lista_dos_medicos"
+        tools:layout="@layout/fragment_lista_dos_medicos" >
+        <action
+            android:id="@+id/action_listaDosMedicos_to_agendaDaClinica"
+            app:destination="@id/agendaDaClinica" />
+        <action
+            android:id="@+id/action_listaDosMedicos_to_perfilClinica"
+            app:destination="@id/perfilClinica" />
+        <action
+            android:id="@+id/action_listaDosMedicos_to_homeClinica"
+            app:destination="@id/homeClinica" />
+    </fragment>
+</navigation>
